@@ -1,0 +1,89 @@
+@import '_config';
+
+.logo {
+    position:fixed;
+    left:50%;
+    top:20px;
+    transform:translateX(-50%);
+    z-index:1;
+    width:40%;
+}
+
+section {
+    height:50%;
+}
+
+.welcome-img {
+
+
+    img {
+        min-width:100%;
+        height:100%;
+        transform: translateX(-6%);
+
+    }
+}
+
+.welcome-info {
+    background-color: white;
+    text-align:center;
+
+    article {
+        width:90%;
+        height:90%;
+        margin:5% auto;
+        font-family: ccb-font;
+        text-align:left;
+        position:relative;
+
+
+        h1 {
+            font-size: 30px;
+            font-weight: 600;
+            line-height:60px;
+        }
+        p {
+            margin-top:10px;
+            line-height:24px;
+        }
+        button {
+            background-color:$ccb-color;
+            color:white;
+            width:100%;
+            font-family: ccb-font;
+            font-size:20px;
+            line-height:60px;
+            border-radius:16px;
+            border:none;
+            position:absolute;
+            bottom:0;
+
+            &:hover {
+                background-color:#CC1A21;
+            }
+        }
+        div {
+            text-align:center;
+            background-color:white;
+            border:solid 3px #000;
+            border-radius:18px;
+            position:fixed;
+            bottom:-50%;
+            padding:5%;
+            width:90%;
+
+            img {
+                margin:auto;
+                width:100%;
+            }
+        }
+        .qr-up {
+            bottom:15%;
+            transition:bottom 0.8s ease;
+        }
+        .qr-down {
+            bottom:-50%;
+            transition:bottom 0.8s ease;
+        }
+    }
+}
