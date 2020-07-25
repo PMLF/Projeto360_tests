@@ -57,12 +57,13 @@ section {
             border:none;
             position:absolute;
             bottom:0;
+            z-index:1;
 
             &:hover {
                 background-color:#CC1A21;
             }
         }
-        div {
+        .qrcode {
             text-align:center;
             background-color:white;
             border:solid 3px #000;
@@ -71,11 +72,22 @@ section {
             bottom:-50%;
             padding:5%;
             width:90%;
+            z-index:1;
 
             img {
                 margin:auto;
                 width:100%;
             }
+        }
+        .cover-screen {
+            position:fixed;
+            top:0;
+            left:0;
+            border-radius:0;
+            border:none;
+            height:100%;
+            width:100%;
+            background-color: rgba(0,0,0,0.5);
         }
         .qr-up {
             bottom:15%;
@@ -86,4 +98,8 @@ section {
             transition:bottom 0.8s ease;
         }
     }
+}
+
+.hidden {
+    display:none;
 }
