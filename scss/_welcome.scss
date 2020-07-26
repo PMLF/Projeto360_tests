@@ -46,7 +46,7 @@ section {
             margin-top:10px;
             line-height:24px;
         }
-        button {
+        .get-qrcode {
             background-color:$ccb-color;
             color:white;
             width:100%;
@@ -57,10 +57,42 @@ section {
             border:none;
             position:absolute;
             bottom:0;
-            z-index:1;
+            z-index:2;
 
             &:hover {
                 background-color:#CC1A21;
+            }
+        }
+
+        .bottom-menu {
+            display: grid;
+            grid-template-columns: 22% 22% 22% 22%;
+            grid-column-gap: 4%;
+            position:absolute;
+            bottom:0;
+            width:100%;
+
+            button {
+                background-color:$ccb-color;
+                color:white;
+                font-family: ccb-font;
+                font-size:26px;
+                line-height:60px;
+                border-radius:16px;
+                border:none;
+                width:100%;
+                z-index:2;
+    
+                &:hover {
+                    background-color:#CC1A21;
+                    transform: scale(1.05);
+                    transition:transform 0.1s ease;
+                }
+                &:first-of-type {
+                    background-color:#fff;
+                    border:$ccb-color solid 6px;
+                    color:$ccb-color;
+                }
             }
         }
         .qrcode {

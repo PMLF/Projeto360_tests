@@ -125,7 +125,7 @@ section {
     .welcome-info article p {
       margin-top: 10px;
       line-height: 24px; }
-    .welcome-info article button {
+    .welcome-info article .get-qrcode {
       background-color: #db1a21;
       color: white;
       width: 100%;
@@ -136,9 +136,34 @@ section {
       border: none;
       position: absolute;
       bottom: 0;
-      z-index: 1; }
-      .welcome-info article button:hover {
+      z-index: 2; }
+      .welcome-info article .get-qrcode:hover {
         background-color: #CC1A21; }
+    .welcome-info article .bottom-menu {
+      display: grid;
+      grid-template-columns: 22% 22% 22% 22%;
+      grid-column-gap: 4%;
+      position: absolute;
+      bottom: 0;
+      width: 100%; }
+      .welcome-info article .bottom-menu button {
+        background-color: #db1a21;
+        color: white;
+        font-family: ccb-font;
+        font-size: 26px;
+        line-height: 60px;
+        border-radius: 16px;
+        border: none;
+        width: 100%;
+        z-index: 2; }
+        .welcome-info article .bottom-menu button:hover {
+          background-color: #CC1A21;
+          transform: scale(1.05);
+          transition: transform 0.1s ease; }
+        .welcome-info article .bottom-menu button:first-of-type {
+          background-color: #fff;
+          border: #db1a21 solid 6px;
+          color: #db1a21; }
     .welcome-info article .qrcode {
       text-align: center;
       background-color: white;
