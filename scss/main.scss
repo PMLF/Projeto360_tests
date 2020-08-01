@@ -2,3 +2,86 @@
 @import '_config';
 @import '_mixins';
 @import '_welcome';
+@import '_content-section';
+@import '_xray';
+
+
+.bottom {
+    text-align: center;
+    .bottom-menu5 {
+        background-color: $ccb-color;
+        position:absolute;
+        bottom:0;
+        width:100%;
+        height:8%;
+        margin:auto;
+        line-height:100%;
+
+        button {
+            background-color:transparent;
+            border:none;
+            border-radius:10px;
+            width:12%;
+            height:70%;
+            color:white;
+            font-family: ccb-font;
+            font-size:26px;
+            line-height:100%;
+            transform:translateY(-16%);
+
+            &:hover {
+                background-color: #CC1A21;
+                transform:scale(1.05) translateY(-16%);
+            }
+            &:nth-of-type(3) {
+                background-color:#376787;
+                border:#fff solid 5px;
+                border-radius:50%;
+                transform:translateY(-35%);
+                width:80px;
+                height:80px;
+                margin:0 2%;
+                font-size:30px;
+            }
+            &:nth-of-type(-n + 2) {
+                margin:0 2%;
+            }
+            &:nth-of-type(n + 4) {
+                margin:0 2%;
+            }
+        }
+        .active {
+            background-color:#fff;
+            color:$ccb-color;
+            transform:scale(1.05) translateY(-16%);
+
+            &:hover {
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+body {
+    cursor:none;
+}
+
+.pointer {
+    position:absolute;
+    background-color: rgba(255,255,255,0.5);
+    border:3px solid black;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    transition:0.05s;
+    transform:translate(-50%,-50%);
+    pointer-events:none;
+    box-sizing:border-box;
+    z-index:4;
+}
+
+.logo-simple:hover ~ .pointer {
+    width:100px;
+    height:100px;
+    background-color: blue;
+}

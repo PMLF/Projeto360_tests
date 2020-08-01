@@ -1,4 +1,4 @@
-document.querySelector(".get-qrcode").addEventListener('click',
+/*document.querySelector(".get-qrcode").addEventListener('click',
     function (e) {
         let qrcode = document.querySelector('.qrcode');
         let cover = document.querySelector('.cover-screen');
@@ -16,3 +16,24 @@ document.querySelector(".get-qrcode").addEventListener('click',
         }
     }
 );
+*/
+
+var pointer = document.querySelector(".pointer");
+
+document.addEventListener("mousemove",
+    function (e) {
+        let x = e.clientX;
+        let y = e.clientY;
+        pointer.style.left = x + "px";
+        pointer.style.top = y + "px";
+});
+
+$(document).ready(function(){
+    $('.original').mousemove(function(e) {
+        let x = e.clientX;
+        let y = e.clientY;
+      
+      $('.negative').css('-webkit-mask-position-x', x - 50);
+      $('.negative').css('-webkit-mask-position-y', y - 50);
+    });
+});

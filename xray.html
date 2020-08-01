@@ -18,36 +18,51 @@
 	<!--favicon-->
 	<link rel="shortcut icon" href="images/favicon.ico" />
 	<link rel="icon" type="image/ico" href="images/favicon.ico" />
+	<!--Icons-->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
 	<!--Font-->
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
 	<!--Links-->
 	<link rel="stylesheet" href="css/main.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
-	<img class="logo" src="images/LogoCCBCidadeAberta300px.png" alt="CCB logo">
-
-	<section class="welcome-img">
-		<img src="images/ccb-out.jpg" alt="Fachada do CCB.">
+	<section class="original">
+		<img 
+			src="https://windows10spotlight.com/wp-content/uploads/2017/06/d3366e15478203a8c287d169cc5cb0ff.jpg"
+			alt=""
+			class="negative">
 	</section>
 
-	<section class="welcome-info">
-		<article>
-			<h1>Bem vindo ao CCB</h1>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				Lorem ipsum dolor sit amet consectetur adipisicing elit.
-			</p>
-			<button class="get-qrcode">
-				Gerar Código QR
+	<!--section class="original">
+		<img 
+			class="negative" 
+			src="https://windows10spotlight.com/wp-content/uploads/2017/06/d3366e15478203a8c287d169cc5cb0ff.jpg">
+	</section-->
+	
+	<section class="bottom">
+		<div class="bottom-menu5">
+			<button class="active">
+				<i class="fas fa-home"></i>
 			</button>
-			<div class="qrcode qr-down">
-				<img src="images/qrcode.png" alt="Código QR, a tua chave da Cidade Aberta.">
-			</div>
-			<div class="cover-screen hidden"></div>
-		</article>
+			<button>
+				<i class="fas fa-search"></i>
+			</button>
+			<button>
+				<i class="fas fa-key"></i>
+			</button>
+			<button>
+				<i class="far fa-calendar-alt"></i>
+			</button>
+			<button>
+				<i class="fas fa-user"></i>
+			</button>
+		</div>
 	</section>
 
+	<div class="pointer"></div>
 </body>
 <footer>
 	<script src="js/main.js"></script>
