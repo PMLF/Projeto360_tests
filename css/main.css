@@ -273,10 +273,10 @@ main {
     filter: invert(1);
     width: 100%;
     margin: 0;
-    -webkit-mask-image: url("https://media0.giphy.com/media/xUPGcysZHzbcyoXWG4/giphy.gif");
+    -webkit-mask-image: url("/images/mask.png");
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: 100px;
-    mask-image: url("https://media0.giphy.com/media/xUPGcysZHzbcyoXWG4/giphy.gif");
+    mask-image: url("/images/mask.png");
     mask-repeat: no-repeat;
     mask-size: 100px;
     pointer-events: none; }
@@ -284,10 +284,10 @@ main {
     position: absolute;
     top: 200px;
     left: 500px;
-    -webkit-mask-image: url("https://media0.giphy.com/media/xUPGcysZHzbcyoXWG4/giphy.gif");
+    -webkit-mask-image: url("/images/mask.png");
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: 100px;
-    mask-image: url("https://media0.giphy.com/media/xUPGcysZHzbcyoXWG4/giphy.gif");
+    mask-image: url("/images/mask.png");
     mask-repeat: no-repeat;
     mask-size: 100px; }
   .page-container .cta {
@@ -345,8 +345,6 @@ main {
     font-size: 0;
     font-weight: 700;
     vertical-align: top; }
-    .page-container .countdown:hover ~ .negative {
-      display: none; }
     .page-container .countdown .time-measure {
       display: inline-block;
       text-align: center;
@@ -379,63 +377,67 @@ main {
       position: absolute;
       top: 50%;
       transform: translate(-50%, -50%); }
-
-.main-title {
-  position: absolute;
-  top: 46%;
-  left: 5%;
-  font-family: 'Roboto';
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 20px;
-  -webkit-box-shadow: 3px 8px 31px 2px rgba(0, 0, 0, 0.53);
-  -moz-box-shadow: 3px 8px 31px 2px rgba(0, 0, 0, 0.53);
-  box-shadow: 3px 8px 31px 2px rgba(0, 0, 0, 0.53); }
-  .main-title h1 {
-    font-size: 100px;
-    text-transform: uppercase; }
-  .main-title p {
-    font-size: 30px; }
-
-.nav-title {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  font-size: 20px;
-  font-family: 'Roboto';
-  font-weight: 600; }
-
-.social-media {
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  font-size: 34px; }
-  .social-media a {
-    text-decoration: none;
-    color: black; }
-    .social-media a svg {
-      margin: 0 6px; }
-
-.embassadors {
-  position: absolute;
-  left: 5%;
-  bottom: 10%; }
-  .embassadors div {
-    text-align: center;
-    display: inline-block;
-    margin: 0 24px; }
-    .embassadors div img {
-      width: 150px;
-      border-radius: 50%;
-      transform: translateY(30px); }
-    .embassadors div p {
-      color: white;
-      font-family: 'Roboto';
-      font-size: 34px;
-      text-shadow: 2px 2px rgba(0, 0, 0, 0.5); }
-      .embassadors div p:first-of-type {
-        transform: translateX(-20px); }
-      .embassadors div p:last-of-type {
-        transform: translateX(20px); }
+  .page-container .main-title {
+    position: absolute;
+    top: 46%;
+    left: 5%;
+    font-family: 'Roboto';
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    -webkit-box-shadow: 3px 8px 31px 2px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: 3px 8px 31px 2px rgba(0, 0, 0, 0.53);
+    box-shadow: 3px 8px 31px 2px rgba(0, 0, 0, 0.53); }
+    .page-container .main-title h1 {
+      font-size: 100px;
+      text-transform: uppercase; }
+    .page-container .main-title p {
+      font-size: 30px; }
+  .page-container .nav-title {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 600; }
+  .page-container .social-media {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 34px;
+    line-height: 50px; }
+    .page-container .social-media a {
+      text-decoration: none;
+      color: black;
+      margin: 0 5px; }
+      .page-container .social-media a svg {
+        margin: 0 6px; }
+        .page-container .social-media a svg:hover {
+          transform: scale(1.1);
+          transition: 0.1s; }
+    .page-container .social-media:hover ~ .negative {
+      opacity: 0;
+      transition: 0.1s; }
+  .page-container .embassadors {
+    position: absolute;
+    left: 5%;
+    bottom: 10%; }
+    .page-container .embassadors div {
+      text-align: center;
+      display: inline-block;
+      margin: 0 24px; }
+      .page-container .embassadors div img {
+        width: 150px;
+        border-radius: 50%;
+        transform: translateY(30px); }
+      .page-container .embassadors div p {
+        color: white;
+        font-family: 'Roboto';
+        font-size: 34px;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.5); }
+        .page-container .embassadors div p:first-of-type {
+          transform: translateX(-20px); }
+        .page-container .embassadors div p:last-of-type {
+          transform: translateX(20px); }
 
 .bottom {
   text-align: center; }
