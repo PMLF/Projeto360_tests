@@ -17,17 +17,14 @@
         mask-repeat: no-repeat;
         mask-size: 100px;
         pointer-events: none;
+        z-index:0;
     }
     .easter-egg {
         position:absolute;
-        top:200px;
-        left:500px;
-        -webkit-mask-image: url('/images/mask.png');
-        -webkit-mask-repeat: no-repeat;
-        -webkit-mask-size: 100px;
-        mask-image: url('/images/mask.png');
-        mask-repeat: no-repeat;
-        mask-size: 100px;
+        top:0;
+        left:0;
+        width: 100%;
+        display: none;
     }
     .cta {
         background-color:$ccb-color;

@@ -29,15 +29,35 @@ document.addEventListener("mousemove",
 });
 
 $(document).ready(function(){
+
+    // Pointer mask
+    let leftX = Math.round(0.82 * screen.width);
+    let rightX = Math.round(0.93 * screen.width);
+    let topY = Math.round(0.07 * screen.height);
+    let bottomY = Math.round(0.21 * screen.height);
+
     $('.page-container').mousemove(function(e) {
         let x = e.clientX;
         let y = e.clientY;
       
-      $('.negative').css('-webkit-mask-position-x', x - 50);
-      $('.negative').css('-webkit-mask-position-y', y - 50);
+        $('.negative').css('-webkit-mask-position-x', x - 50);
+        $('.negative').css('-webkit-mask-position-y', y - 50);
+        
+        if (e.clientX > leftX && e.clientX < rightX
+            &&
+            e.clientY > topY && e.clientY < bottomY)
+        {
+            $('.easter-egg').css('display', 'inline-block');
+            $('.negative').css('display', 'none');
+        }
+        else {
+            $('.easter-egg').css('display', 'none');
+            $('.negative').css('display', 'inline-block');
+        }
     });
 
-    let endOfCampaign = new Date("Aug 14, 2020 00:00:00").getTime();
+    // Countdown
+    let endOfCampaign = new Date("Aug 07, 2020 19:00:00").getTime();
     let x = setInterval(function() {
         let now = new Date().getTime();
 
